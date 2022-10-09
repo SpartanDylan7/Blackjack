@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3DBA30;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sd7.blackjack.HelloController">
+   <children>
+      <Ellipse fill="#329af0" layoutX="401.0" layoutY="441.0" radiusX="90.0" radiusY="34.0" stroke="#00c8ff" strokeType="INSIDE" strokeWidth="10.0" />
+      <Ellipse fill="#f0d232" layoutX="400.0" layoutY="119.0" radiusX="90.0" radiusY="34.0" stroke="#ffbb00" strokeType="INSIDE" strokeWidth="10.0" />
+      <Arc fill="#652507" layoutX="428.0" layoutY="544.0" length="270.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="192.0" radiusY="509.0" startAngle="45.0" stroke="#723910" strokeType="INSIDE" strokeWidth="10.0" style="-fx-rotate: -90;" type="ROUND" />
+      <Label alignment="CENTER" layoutX="339.0" layoutY="417.0" prefHeight="20.0" prefWidth="122.0" text="Total:">
+         <font>
+            <Font name="Dosis Regular" size="20.0" />
+         </font></Label>
+      <Label fx:id="countLbl" alignment="CENTER" layoutX="365.0" layoutY="438.0" prefHeight="17.0" prefWidth="70.0" text="Count">
+         <font>
+            <Font name="Dosis Regular" size="20.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="333.0" layoutY="272.0" prefHeight="40.0" prefWidth="134.0" text="Card Drawn:">
+         <font>
+            <Font name="Dosis Regular" size="25.0" />
+         </font></Label>
+      <Label fx:id="cardLbl" alignment="CENTER" layoutX="339.0" layoutY="300.0" prefHeight="40.0" prefWidth="122.0" text="Card">
+         <font>
+            <Font name="Dosis Regular" size="25.0" />
+         </font></Label>
+      <Button fx:id="acetwoBtn" layoutX="400.0" layoutY="531.0" mnemonicParsing="false" onAction="#acetwoButtonClick" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: lightblue;" text="Ace: 11">
+         <font>
+            <Font name="Dosis Regular" size="12.0" />
+         </font></Button>
+      <Button fx:id="aceoneBtn" layoutX="344.0" layoutY="531.0" mnemonicParsing="false" onAction="#aceoneButtonClick" prefHeight="25.0" prefWidth="55.0" style="-fx-background-color: lightblue;" text="Ace: 1">
+         <font>
+            <Font name="Dosis Regular" size="12.0" />
+         </font></Button>
+      <Button fx:id="newgameBtn" alignment="CENTER" layoutX="266.0" layoutY="24.0" mnemonicParsing="false" onAction="#newgameButtonClick" prefHeight="25.0" prefWidth="269.0" style="-fx-background-color: #28981B;" text="New Game" AnchorPane.leftAnchor="266.0">
+         <font>
+            <Font name="Dosis ExtraBold" size="26.0" />
+         </font>
+      </Button>
+      <Label fx:id="msgLbl" alignment="CENTER" layoutX="6.0" layoutY="139.0" prefHeight="126.0" prefWidth="789.0" text="BUST" textFill="RED" AnchorPane.leftAnchor="6.0">
+         <font>
+            <Font name="Dosis Regular" size="86.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="339.0" layoutY="95.0" prefHeight="32.0" prefWidth="122.0" text="Opponents Total:">
+         <font>
+            <Font name="Dosis Regular" size="18.0" />
+         </font></Label>
+      <Label fx:id="oppcountLbl" alignment="CENTER" layoutX="339.0" layoutY="118.0" prefHeight="17.0" prefWidth="122.0" text="OppCount">
+         <font>
+            <Font name="Dosis Regular" size="18.0" />
+         </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="60.0" layoutY="428.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 35;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="160.0" layoutY="476.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 27;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="74.0" layoutY="448.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 23;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="688.0" layoutY="428.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -35;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="575.0" layoutY="475.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -24;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="546.0" layoutY="492.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -45;" width="55.0" />
+      <Circle fill="DODGERBLUE" layoutX="286.0" layoutY="576.0" radius="20.0" stroke="#0e52bf" strokeType="INSIDE" strokeWidth="5.0" />
+      <Circle fill="DODGERBLUE" layoutX="296.0" layoutY="586.0" radius="20.0" stroke="#0e52bf" strokeType="INSIDE" strokeWidth="5.0" />
+      <Circle fill="DODGERBLUE" layoutX="296.0" layoutY="566.0" radius="20.0" stroke="#0e52bf" strokeType="INSIDE" strokeWidth="5.0" />
+      <Circle fill="DODGERBLUE" layoutX="291.0" layoutY="566.0" radius="20.0" stroke="#0e52bf" strokeType="INSIDE" strokeWidth="5.0" />
+      <Button fx:id="hitBtn" layoutX="7.0" layoutY="538.0" mnemonicParsing="false" onAction="#hitButtonClick" prefHeight="57.0" prefWidth="97.0" style="-fx-background-color: orange;" text="Hit">
+         <font>
+            <Font name="Dosis Bold" size="27.0" />
+         </font>
+      </Button>
+      <Button fx:id="stayBtn" layoutX="695.0" layoutY="538.0" mnemonicParsing="false" onAction="#stayButtonClick" prefHeight="57.0" prefWidth="97.0" style="-fx-background-color: yellow;" text="Stay">
+         <font>
+            <Font name="Dosis Bold" size="27.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
