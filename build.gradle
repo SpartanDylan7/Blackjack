@@ -25,7 +25,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.sd.blackjack'
-    mainClass = 'com.sd7.blackjack.App'
+    mainClass = 'com.sd7.blackjack.BlackJack'
 }
 
 javafx {
@@ -53,4 +53,8 @@ jlink {
 
 jlinkZip {
     group = 'distribution'
+}
+
+jpackage{
+
 }
