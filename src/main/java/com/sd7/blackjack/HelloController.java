@@ -222,7 +222,9 @@ public class HelloController implements Initializable {
         acetwoBtn.setDisable(true);
         hitBtn.setDisable(true);
         stayBtn.setDisable(true);
-        msgLbl.setVisible(false);
+        msgLbl.setText("Welcome To BlackJack");
+        msgLbl.setStyle("-fx-text-fill: black");
+        msgLbl.setVisible(true);
     }
 
     public void oppHit(){

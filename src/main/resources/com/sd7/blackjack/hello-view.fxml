@@ -11,6 +11,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3DBA30;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sd7.blackjack.HelloController">
    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="724.0" layoutY="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -78;" width="55.0" />
       <Ellipse fill="#329af0" layoutX="401.0" layoutY="441.0" radiusX="90.0" radiusY="34.0" stroke="#00c8ff" strokeType="INSIDE" strokeWidth="10.0" />
       <Ellipse fill="#f0d232" layoutX="400.0" layoutY="119.0" radiusX="90.0" radiusY="34.0" stroke="#ffbb00" strokeType="INSIDE" strokeWidth="10.0" />
       <Arc fill="#652507" layoutX="428.0" layoutY="544.0" length="270.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="192.0" radiusY="509.0" startAngle="45.0" stroke="#723910" strokeType="INSIDE" strokeWidth="10.0" style="-fx-rotate: -90;" type="ROUND" />
@@ -76,5 +77,10 @@
             <Font name="Dosis Bold" size="27.0" />
          </font>
       </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="619.0" layoutY="-38.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -21;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="663.0" layoutY="4.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -47;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="4.0" layoutY="63.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 78;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="127.0" layoutY="-15.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 21;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="72.0" layoutY="44.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 47;" width="55.0" />
    </children>
 </AnchorPane>

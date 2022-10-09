@@ -23,8 +23,7 @@ public class HelloApplication extends Application {
 
     public static void main(String[] args) {
 
-        Cards[] values = Cards.values();
-        System.out.println(values[1]);
+
         launch();
 
 
