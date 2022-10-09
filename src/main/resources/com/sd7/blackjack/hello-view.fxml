@@ -6,15 +6,21 @@
 <?import javafx.scene.shape.Arc?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Polygon?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #3DBA30;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sd7.blackjack.HelloController">
    <children>
+      <Arc fill="#3dba30" layoutX="428.0" layoutY="537.0" length="270.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="192.0" radiusY="509.0" startAngle="45.0" stroke="#39a82d" strokeType="INSIDE" strokeWidth="10.0" style="-fx-rotate: -90;" type="ROUND" />
+      <Arc fill="#652507" layoutX="428.0" layoutY="544.0" length="270.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="192.0" radiusY="509.0" startAngle="45.0" stroke="#723910" strokeType="INSIDE" strokeWidth="10.0" style="-fx-rotate: -90;" type="ROUND" />
+      <Circle fill="#4a1c09" layoutX="299.0" layoutY="579.0" radius="20.0" stroke="#4a1c09" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#4a1c09" layoutX="289.0" layoutY="584.0" radius="20.0" stroke="#4a1c09" strokeType="INSIDE" strokeWidth="0.0" />
+      <Circle fill="#4a1c09" layoutX="286.0" layoutY="567.0" radius="20.0" stroke="#4a1c09" strokeType="INSIDE" strokeWidth="0.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="724.0" layoutY="25.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -78;" width="55.0" />
       <Ellipse fill="#329af0" layoutX="401.0" layoutY="441.0" radiusX="90.0" radiusY="34.0" stroke="#00c8ff" strokeType="INSIDE" strokeWidth="10.0" />
       <Ellipse fill="#f0d232" layoutX="400.0" layoutY="119.0" radiusX="90.0" radiusY="34.0" stroke="#ffbb00" strokeType="INSIDE" strokeWidth="10.0" />
-      <Arc fill="#652507" layoutX="428.0" layoutY="544.0" length="270.0" nodeOrientation="LEFT_TO_RIGHT" radiusX="192.0" radiusY="509.0" startAngle="45.0" stroke="#723910" strokeType="INSIDE" strokeWidth="10.0" style="-fx-rotate: -90;" type="ROUND" />
       <Label alignment="CENTER" layoutX="339.0" layoutY="417.0" prefHeight="20.0" prefWidth="122.0" text="Total:">
          <font>
             <Font name="Dosis Regular" size="20.0" />
@@ -58,20 +64,12 @@
             <Font name="Dosis Regular" size="18.0" />
          </font></Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="60.0" layoutY="428.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 35;" width="55.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="160.0" layoutY="476.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 27;" width="55.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="74.0" layoutY="448.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 23;" width="55.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="688.0" layoutY="428.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -35;" width="55.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="575.0" layoutY="475.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -24;" width="55.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="546.0" layoutY="492.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -45;" width="55.0" />
       <Circle fill="DODGERBLUE" layoutX="286.0" layoutY="576.0" radius="20.0" stroke="#0e52bf" strokeType="INSIDE" strokeWidth="5.0" />
       <Circle fill="DODGERBLUE" layoutX="296.0" layoutY="586.0" radius="20.0" stroke="#0e52bf" strokeType="INSIDE" strokeWidth="5.0" />
       <Circle fill="DODGERBLUE" layoutX="296.0" layoutY="566.0" radius="20.0" stroke="#0e52bf" strokeType="INSIDE" strokeWidth="5.0" />
       <Circle fill="DODGERBLUE" layoutX="291.0" layoutY="566.0" radius="20.0" stroke="#0e52bf" strokeType="INSIDE" strokeWidth="5.0" />
-      <Button fx:id="hitBtn" layoutX="7.0" layoutY="538.0" mnemonicParsing="false" onAction="#hitButtonClick" prefHeight="57.0" prefWidth="97.0" style="-fx-background-color: orange;" text="Hit">
-         <font>
-            <Font name="Dosis Bold" size="27.0" />
-         </font>
-      </Button>
       <Button fx:id="stayBtn" layoutX="695.0" layoutY="538.0" mnemonicParsing="false" onAction="#stayButtonClick" prefHeight="57.0" prefWidth="97.0" style="-fx-background-color: yellow;" text="Stay">
          <font>
             <Font name="Dosis Bold" size="27.0" />
@@ -82,5 +80,93 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="4.0" layoutY="63.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 78;" width="55.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="127.0" layoutY="-15.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 21;" width="55.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="72.0" layoutY="44.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 47;" width="55.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="160.0" layoutY="476.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 27;" width="55.0" />
+      <Text layoutX="184.0" layoutY="497.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 27;" text="7">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="181.0" layoutY="579.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 27;" text="7">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Circle layoutX="178.0" layoutY="523.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="196.0" layoutY="531.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="192.0" layoutY="517.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon layoutX="182.0" layoutY="532.0" points="-16.117752075195312, 13.11773681640625, 19.882247924804688, 13.11773681640625, -1.0699354410171509, -7.799666881561279" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: 27;" />
+      <Text layoutX="91.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 35;" text="9">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Ellipse layoutX="83.0" layoutY="480.0" radiusX="17.0" radiusY="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: 130;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="74.0" layoutY="448.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: 23;" width="55.0" />
+      <Text fill="RED" layoutX="98.0" layoutY="473.0" stroke="RED" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 23;" text="1">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="100.0" layoutY="551.0" stroke="RED" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: 23;" text="1">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Ellipse fill="RED" layoutX="98.0" layoutY="504.0" radiusX="17.0" radiusY="9.0" stroke="RED" strokeType="INSIDE" style="-fx-rotate: 80;" />
+      <Ellipse fill="RED" layoutX="105.0" layoutY="504.0" radiusX="17.0" radiusY="9.0" stroke="RED" strokeType="INSIDE" style="-fx-rotate: -70;" />
+      <Button fx:id="hitBtn" layoutX="7.0" layoutY="538.0" mnemonicParsing="false" onAction="#hitButtonClick" prefHeight="57.0" prefWidth="97.0" style="-fx-background-color: orange;" text="Hit">
+         <font>
+            <Font name="Dosis Bold" size="27.0" />
+         </font>
+      </Button>
+      <Text fill="RED" layoutX="674.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -35;" text="7">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="747.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -35;" text="7">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Polygon fill="RED" layoutX="711.0" layoutY="453.0" points="-13.90975570678711, 28.505674362182617, 11.27236270904541, 32.28447723388672, 3.604641914367676, 7.809271812438965" stroke="RED" strokeType="INSIDE" style="-fx-rotate: -35;" />
+      <Polygon fill="RED" layoutX="723.0" layoutY="470.0" points="-13.90975570678711, 28.505674362182617, 11.27236270904541, 32.28447723388672, 3.604641914367676, 7.809271812438965" stroke="RED" strokeType="INSIDE" style="-fx-rotate: -215;" />
+      <Ellipse layoutX="596.0" layoutY="529.0" radiusX="17.0" radiusY="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: -87;" />
+      <Ellipse layoutX="605.0" layoutY="524.0" radiusX="17.0" radiusY="9.0" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: -150;" />
+      <Text layoutX="560.0" layoutY="511.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -24;" text="A">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="625.0" layoutY="565.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -24;" text="A">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="27.0" layoutX="599.0" layoutY="524.0" stroke="BLACK" strokeType="INSIDE" style="-fx-rotate: -35;" width="13.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eaf5ea" height="104.0" layoutX="546.0" layoutY="492.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="3.0" style="-fx-rotate: -45;" width="55.0" />
+      <Text fill="RED" layoutX="526.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -45;" text="K">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="607.0" layoutY="571.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-rotate: -45;" text="K">
+         <font>
+            <Font name="Dosis ExtraBold" size="25.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="20.0" layoutX="561.0" layoutY="550.0" stroke="RED" strokeType="INSIDE" style="-fx-rotate: 45;" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="20.0" layoutX="569.0" layoutY="557.0" stroke="RED" strokeType="INSIDE" style="-fx-rotate: -45;" width="10.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="20.0" layoutX="553.0" layoutY="542.0" stroke="RED" strokeType="INSIDE" style="-fx-rotate: -45;" width="10.0" />
+      <Polygon fill="RED" layoutX="557.0" layoutY="517.0" points="-13.90975570678711, 28.505674362182617, 1.5958298444747925, 31.277742385864258, -3.815584897994995, 20.339920043945312" stroke="RED" strokeType="INSIDE" style="-fx-rotate: 65;" />
+      <Arc fill="RED" layoutX="587.0" layoutY="554.0" length="270.0" radiusX="15.0" radiusY="17.0" startAngle="45.0" stroke="RED" strokeType="INSIDE" style="-fx-rotate: 45;" type="CHORD" />
+      <Circle fill="RED" layoutX="574.0" layoutY="536.0" radius="12.0" stroke="RED" strokeType="INSIDE" />
+      <Polygon fill="RED" layoutX="569.0" layoutY="505.0" points="-13.90975570678711, 28.505674362182617, 1.5958298444747925, 31.277742385864258, -3.815584897994995, 20.339920043945312" stroke="RED" strokeType="INSIDE" style="-fx-rotate: 65;" />
+      <Polygon fill="RED" layoutX="573.0" layoutY="500.0" points="-13.90975570678711, 28.505674362182617, 1.5958298444747925, 31.277742385864258, -3.815584897994995, 20.339920043945312" stroke="RED" strokeType="INSIDE" style="-fx-rotate: 65;" />
+      <Polygon fill="RED" layoutX="577.0" layoutY="497.0" points="-13.90975570678711, 28.505674362182617, 1.5958298444747925, 31.277742385864258, -3.815584897994995, 20.339920043945312" stroke="RED" strokeType="INSIDE" style="-fx-rotate: 65;" />
+      <Circle fill="WHITE" layoutX="578.0" layoutY="531.0" radius="4.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="RED" layoutX="579.0" layoutY="531.0" radius="1.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="RED" layoutX="587.0" layoutY="538.0" radius="8.0" stroke="RED" strokeType="INSIDE" />
+      <Circle fill="RED" layoutX="592.0" layoutY="543.0" radius="8.0" stroke="RED" strokeType="INSIDE" />
    </children>
 </AnchorPane>
