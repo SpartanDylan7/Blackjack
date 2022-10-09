@@ -14,10 +14,10 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(fxmlLoader.load(), 800, 600);
         stage.setTitle("BlackJack");
         stage.setScene(scene);
-        stage.setMaxWidth(800);
-        stage.setMaxHeight(600);
-        stage.setMinWidth(800);
-        stage.setMinHeight(600);
+        stage.setMaxWidth(814);
+        stage.setMaxHeight(640);
+        stage.setMinWidth(814);
+        stage.setMinHeight(640);
         stage.show();
     }
 
